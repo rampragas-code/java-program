@@ -1,0 +1,14 @@
+p{
+    background-color: blue;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*child selector*/
+div p:first-child{
+    background-color: yellow;
+    color: red;
+}
+div p:nth-child(2){
+    background-color: greenyellow;
+
+}

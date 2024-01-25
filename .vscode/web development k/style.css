@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* group selector */
+h1,h3,h4,h5,h6{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    border: 2px dashed black;
+    height: 50vh;
+    width: 50vh;
+    color: red;
+}
+h1{
+    height: 50vh;
+    width: 50vh;
+}
+.class{
+    text-decoration: dashed;
+}
+#heading{
+    text-align: center;
+}
+.change{
+    background-color: rgba(6, 255, 172, 0.5);
+}
+#img{
+    background-color: aliceblue;
+    height: 2000px;
+    width: 2000px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg)
+    /* shorehand(color,image,repeat,attachment.position) */
+    
+}
+#im{
+    background: #941212 url(https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg) no-repeat right top;
+    height: 2000px;
+    width: 2000px;
+}
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 10px;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: cursive;
+
+}

@@ -1,0 +1,38 @@
+/* Universal Selector(*): Target the entire page.
+Element Selector: Target a specific element.
+ID Selector(#): Target element with a specific ID.
+Class Selector(.): Target element(s) with the same class.
+Group Selector: Group elements and target them.
+element.class	p.intro	Selects only <p> elements with class="intro" */
+/* this is universal selector */
+*{
+    margin: 0;
+    text-align: center;
+    
+}
+/*this is element selector*/
+body{
+    background-color: red;
+    color: white;
+}
+th{
+    color: yellow;
+}
+/* this is id selector*/
+#firstdiv {
+    text-decoration: underline;
+}
+/*this is class selector*/
+.div1{
+    color: black;
+}
+/* group selector*/
+ p,a {
+    color: blue;
+}
+p{
+    padding: 10px;
+    border: 5px solid greenyellow;
+    margin: 10px;
+
+}

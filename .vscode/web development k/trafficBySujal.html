@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Traffic Signal</title>
+  <style>
+    .traffic-signal {
+      width: 100px;
+      height: 300px;
+      background-color: #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .light {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 10px;
+      transition: background-color 0.9s;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .green {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="traffic-signal">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+  </div>
+
+  <script>
+    const redLight = document.querySelector('.red');
+    const yellowLight = document.querySelector('.yellow');
+    const greenLight = document.querySelector('.green');
+
+    function changeLights() {
+      setTimeout(() => {
+        redLight.style.backgroundColor = 'black';
+        yellowLight.style.backgroundColor = 'yellow';
+      }, 2000);
+
+      setTimeout(() => {
+        yellowLight.style.backgroundColor = 'black';
+        greenLight.style.backgroundColor = 'green';
+      }, 4000);
+
+      setTimeout(() => {
+        greenLight.style.backgroundColor = 'black';
+        yellowLight.style.backgroundColor = 'yellow';
+      }, 6000);
+
+      setTimeout(() => {
+        yellowLight.style.backgroundColor = 'black';
+        redLight.style.backgroundColor = 'red';
+        changeLights();
+      }, 8000);
+    }
+
+    changeLights();
+  </script>
+</body>
+</html>
